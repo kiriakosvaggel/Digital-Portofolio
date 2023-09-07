@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+
+/* CSS reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(../images/grating.jpg);
+  background-size: 150px;
+  background-repeat: repeat;
+}
+
+/* Header section */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+/* nav bar */
+nav {
+  font-family: "Bodoni Moda", serif;
+  background: rgb(214, 214, 216);
+  background: linear-gradient(
+    90deg,
+    rgba(214, 214, 216, 1) 52%,
+    rgba(74, 77, 72, 1) 100%
+  );
+}
+header .where-to {
+  background-color: #f2f2f2;
+  box-shadow: 8px 14px 73px -2px rgb(255, 255, 255);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 150px;
+  transform: rotate();
+  padding: 15px;
+  align-self: center;
+  cursor: pointer;
+}
+
+header #Where-to:hover {
+  animation: pulse 0.5s ease-in infinite;
+}
+header .where-to h2 {
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
+    -1px -1px 0 #c6c23f;
+  letter-spacing: 5px;
+  padding-bottom: 10px;
+}
+header .where-to h3 {
+  text-align: center;
+  padding-bottom: 15px;
+  color: #dee1e3;
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 3px #222324;
+  letter-spacing: 2px;
+}
+header .where-to .where-icons {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  align-items: end;
+  text-align: end;
+}
+
+header .where-to .nav-icon a {
+  color: #222324;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+/* IMG of the header */
+.back {
+  margin-top: 30px;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-image: url(../images/Fred_Again_in_London_in_2020.jpg);
+  background-position: center;
+  flex-shrink: 0;
+}
+/* end of Header */
+
+/* start of charts/cards/spotify */
+
+.songs {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.songs .title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 120px;
+}
+.title {
+  transition: transform 2.2s;
+}
+.title:hover {
+  transform: rotate(360deg);
+}
+.inside h5 {
+  font-size: 35px;
+  font-family: "Bodoni Moda", serif;
+  letter-spacing: 5px;
+}
+
+.inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 150px;
+  background-color: #f2f2f2;
+
+  border-radius: 10px;
+  box-shadow: 8px 14px 73px -2px rgba(80, 227, 194, 1);
+}
+
+.songs .main-container .card {
+  min-width: 140px;
+  width: 280px;
+  padding: 12px;
+  background-color: #94939300;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+
+.songs .main-container .card:hover .container a i {
+  opacity: 1;
+  transform: translateY(-70px) translateX(100px);
+  font-size: 40px;
+  transition-duration: 0.7s;
+}
+.songs .main-container .card h4 {
+  color: #606e79;
+  padding: 0.3em;
+  font-size: 20px;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.songs .main-container .card p {
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+.songs.container {
+  padding: 2px 16px;
+}
+.main-container {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.card h4,
+.music {
+  padding: 0.3em;
+  box-shadow: 1px 1px 8px rgba(185, 179, 179, 0.61);
+  background-color: #cfd3d7;
+  color: #606e79;
+  text-align: center;
+}
+
+/* end of charts */
+
+/* second section about me */
+
+.about {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.shadow {
+  text-transform: uppercase;
+  width: 350px;
+  height: 40px;
+  border: 5 solid blue;
+}
+
+.shadow {
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  position: relative;
+  margin: 85px auto 0;
+  height: 150px;
+  background: #15202b;
+}
+
+.shadow::before,
+.shadow::after {
+  content: "";
+  position: absolute;
+  top: -4px;
+  left: -4px;
+
+  background: linear-gradient(
+    45deg,
+    red,
+    blue,
+    green,
+    yellow,
+    #e11d74,
+    black,
+    #ffff00,
+    #aa0000
+  );
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: shadow 25s linear infinite;
+}
+
+.shadow::after {
+  filter: blur(25px);
+}
+
+@keyframes shadow {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 400% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.second {
+  position: relative;
+  z-index: -1;
+  width: 65%;
+  height: 100%;
+  background-color: #adb4b9;
+  color: #f9f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.second h3 {
+  text-align: center;
+  letter-spacing: 5px;
+  color: #dee1e3;
+  font-size: 50px;
+  text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+}
+.second p {
+  font-size: 23px;
+  text-shadow: 0.5px 1px;
+}
+/* end of about me  */
+
+/* contact me footer */
+.column label {
+  font-family: "Bodoni Moda", serif;
+}
+.con {
+  color: rgb(230, 209, 209);
+  letter-spacing: 5px;
+  text-shadow: -1px 1px 0 #41ba45, 1px 1px 0 #c63d2b, 1px -1px 0 #42afac,
+    -1px -1px 0 #c6c23f;
+  font-size: 35px;
+}
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type="submit"] {
+  background-color: #04aa6d;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.imag {
+  object-fit: cover;
+}
+
+/* Create two columns that float next to each other */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.con-img {
+  object-fit: cover;
+  width: 500px;
+  height: 600px;
+}
+/* end of footer */
+
+@media only screen and (max-width: 1200px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 15%;
+    gap: 15px;
+  }
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+  .back {
+    width: 30%;
+    height: 50%;
+  }
+  .back {
+    width: 450px;
+    height: 650px;
+  }
+  header .where-to {
+    width: 350px;
+  }
+}
