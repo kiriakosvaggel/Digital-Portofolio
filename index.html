@@ -23,6 +23,7 @@
   </head>
 
   <body>
+    <div id="mask"></div>
 
     <header>
 
@@ -265,8 +266,6 @@
     </div>
     </section>
 
-    <div id="mask"></div>
-
     <script
       src="https://kit.fontawesome.com/23cecef777.js"
       crossorigin="anonymous"
@@ -289,20 +288,32 @@
     ></script>
 
     <script>
-      const mask = document.getElementById("mask")
+      ;(function (){
+        const mask = document.getElementById("mask")
 
-      var password = "this";
-      
-      (function passcodeprotect() {
-         var passcode = prompt("Enter PassCode");
+        const visited = localStorage.getItem("visited")
 
-         while (passcode !== password) {
-            alert("Incorrect PassCode");
-            return passcodeprotect();
-         }
+        if (visited === "true") {
+          mask.classList.add("hidden")
+          return
+        }
 
-         mask.classList.add("hidden")
-      }());
+        // We only get here if the password has never yet been given
+        var password = "this";
+
+        (function passcodeprotect() {
+          var passcode = prompt("Enter PassCode");
+
+          while (passcode !== password) {
+              alert("Incorrect PassCode");
+              return passcodeprotect();
+          }
+
+          localStorage.setItem("visited", "true")
+          mask.classList.add("hidden")
+        }());
+
+      })()
     </script>
   </body>
 </html>
