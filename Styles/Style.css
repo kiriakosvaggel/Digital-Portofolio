@@ -11,8 +11,16 @@ div#mask {
   z-index: 99999;
 }
 
+div#mask ~ * {
+  overflow: hidden;
+}
+
 div#mask.hidden {
   display: none;
+}
+
+div#mask.hidden ~ * {
+  overflow: unset;
 }
 
 /* CSS reset */
@@ -377,7 +385,7 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1200px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
