@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz@6..96&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
 
+div#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  z-index: 99999;
+}
+
+div#mask.hidden {
+  display: none
+}
+
+
+
 /* CSS reset */
 * {
   padding: 0;

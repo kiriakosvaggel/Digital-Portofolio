@@ -24,7 +24,6 @@
 
   <body>
 
-
     <header>
 
 
@@ -266,6 +265,8 @@
     </div>
     </section>
 
+    <div id="mask"></div>
+
     <script
       src="https://kit.fontawesome.com/23cecef777.js"
       crossorigin="anonymous"
@@ -287,5 +288,20 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+      const mask = document.getElementById("mask")
+
+      var password = "this";
+      (function passcodeprotect() {
+         var passcode = prompt("Enter PassCode");
+
+         while (passcode !== password) {
+            alert("Incorrect PassCode");
+            return passcodeprotect();
+         }
+
+         mask.classList.add("hidden")
+      }());
+    </script>
   </body>
 </html>
