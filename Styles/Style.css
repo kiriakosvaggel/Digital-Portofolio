@@ -348,6 +348,21 @@ input[type="submit"]:hover {
 }
 /* end of footer */
 
+.end {
+  /* background-color: #f2f2f2; */
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  padding: 25px;
+  width: 100%;
+}
+.end div {
+  background-color: #f2f2f2;
+  padding: 35px;
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 1200px) {
   .main-container {
     display: grid;
