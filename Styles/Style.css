@@ -12,10 +12,8 @@ div#mask {
 }
 
 div#mask.hidden {
-  display: none
+  display: none;
 }
-
-
 
 /* CSS reset */
 * {
@@ -379,7 +377,7 @@ input[type="submit"]:hover {
   justify-content: center;
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 600px) {
   .main-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
