@@ -11,8 +11,16 @@ div#mask {
   z-index: 99999;
 }
 
+div#mask ~ * {
+  overflow:hidden;
+}
+
 div#mask.hidden {
   display: none
+}
+
+div#mask.hidden ~ * {
+  overflow:unset;
 }
 
 
