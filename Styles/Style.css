@@ -419,8 +419,16 @@ input[type="submit"]:hover {
     display: flex;
     flex-direction: column;
   }
-  footer .con-img {
+
+  footer {
+    justify-content: center;
+  }
+
+  footer .row {
     width: auto;
+  }
+  footer .row .column .con-img {
+    width: 90%;
   }
 }
 
