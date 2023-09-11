@@ -384,6 +384,45 @@ input[type="submit"]:hover {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 669px) {
+  header {
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+  }
+  header .back {
+    height: 55%;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .first {
+    height: 55%;
+    margin-top: 25px;
+    width: auto;
+  }
+  .about .second {
+    width: auto;
+  }
+  .songs {
+    margin-top: 180px;
+  }
+  .songs .main-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+    /* width: auto; */
+  }
+  .main-container .card {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .con-img {
+    width: auto;
+  }
+}
 
 @media only screen and (max-width: 1200px) {
   .main-container {
