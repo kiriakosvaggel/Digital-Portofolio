@@ -110,7 +110,7 @@ header .where-to .nav-icon a {
   width: 50%;
   height: 100%;
   background-repeat: no-repeat;
-  background-image: url(../images/Fred_Again_in_London_in_2020.jpg);
+  background-image: url(../images/57116419_1924855960975778_8076333688255676416_n-removebg-preview.png);
   background-position: center;
   flex-shrink: 0;
 }
@@ -232,6 +232,11 @@ header .where-to .nav-icon a {
   height: 150px;
   background: #15202b;
 }
+.second p {
+  font-size: 23px;
+  text-shadow: 0.5px 1px;
+  word-wrap: break-word;
+}
 
 .shadow::before,
 .shadow::after {
@@ -279,7 +284,8 @@ header .where-to .nav-icon a {
 .second {
   position: relative;
   z-index: -1;
-  width: 65%;
+  width: 100%;
+  max-width: 900px;
   height: 100%;
   background-color: #adb4b9;
   color: #f9f9fa;
@@ -299,7 +305,7 @@ header .where-to .nav-icon a {
   text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
 }
 .second p {
-  font-size: 23px;
+  font-size: 20px;
   text-shadow: 0.5px 1px;
 }
 /* end of about me  */
@@ -407,10 +413,11 @@ input[type="submit"]:hover {
     width: auto;
   }
   .songs {
-    margin-top: 179px;
+    margin-top: 270px;
   }
   .songs .main-container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
